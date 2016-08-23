@@ -1,0 +1,10 @@
+<h1>Pensionirakendus</h1>
+<h2>Lae yles enda pensionifondi pdf alloleva vormi abil, et v6rrelda tootlikkuse %</h2>
+<p>
+  <%= form_tag( { :action => 'upload' }, :multipart => true ) %>
+   Upload file: <%= file_field( "form", "file" ) %>
+   <br />
+
+     <%= submit_tag( "Upload file" ) %>
+  <%= end_form_tag %>
+</p>
